@@ -1,0 +1,100 @@
+/* Reset default margin and padding */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #e9ecef;
+}
+
+.container {
+    background: #ffffff;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 500px;
+}
+
+h1 {
+    color: #343a40;
+    margin-bottom: 20px;
+}
+
+.controls {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.controls input {
+    padding: 12px;
+    border: 1px solid #ced4da;
+    border-radius: 8px;
+    font-size: 16px;
+    width: 100%;
+}
+
+.controls button {
+    padding: 12px;
+    border: none;
+    border-radius: 8px;
+    background-color: #007bff;
+    color: #ffffff;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.controls button:hover {
+    background-color: #0056b3;
+}
+
+.queue-display {
+    margin-top: 20px;
+}
+
+.queue-display ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.queue-display li {
+    padding: 12px;
+    border: 1px solid #dee2e6;
+    margin-bottom: 10px;
+    border-radius: 8px;
+    background-color: #f8f9fa;
+    font-size: 16px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Media query for responsiveness */
+@media (max-width: 600px) {
+    .controls {
+        gap: 8px;
+    }
+
+    .controls input,
+    .controls button {
+        font-size: 14px;
+        padding: 10px;
+    }
+
+    .queue-display li {
+        font-size: 14px;
+        padding: 10px;
+    }
+}
